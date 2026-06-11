@@ -1,0 +1,15 @@
+<section class="archive">
+  <header class="section-header">
+    <p class="eyebrow">Archive</p>
+    <h1>全部文章</h1>
+  </header>
+
+  <div class="timeline">
+    <% site.posts.sort('-date').each(function(post) { %>
+      <a class="timeline-row" href="<%- url_for(post.path) %>">
+        <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'YYYY-MM-DD') %></time>
+        <span><%= post.title %></span>
+      </a>
+    <% }) %>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="<%= config.language || 'zh-CN' %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="<%= config.description %>">
+  <meta name="theme-color" content="#090b10">
+  <title><%= page.title ? page.title + ' | ' + config.title : config.title %></title>
+  <link rel="icon" type="image/jpeg" href="<%- url_for(theme.favicon || theme.brand_icon || theme.avatar || '/images/avatar.png') %>">
+  <%- css('css/style.css') %>
+</head>
+<body class="<%= is_home() ? 'is-home' : 'is-inner' %>">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="<%- url_for('/') %>" aria-label="<%= config.title %>">
+        <img class="brand-icon" src="<%- url_for(theme.brand_icon || '/images/brand-star.jpg') %>" alt="">
+        <span>
+          <strong><%= config.title %></strong>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <% (theme.nav || []).forEach(function(item) { %>
+          <a href="<%- url_for(item.path) %>">
+            <% if (item.icon === 'home') { %>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10z"/></svg>
+            <% } else if (item.icon === 'logs') { %>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2V5z"/><path d="M8 7h6M8 11h7M8 15h5"/></svg>
+            <% } else if (item.icon === 'link') { %>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1"/></svg>
+            <% } else { %>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+            <% } %>
+            <span><%= item.name %></span>
+          </a>
+        <% }) %>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <%- body %>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <%= new Date().getFullYear() %> <%= config.author %></span>
+      <span>Hexo / GitHub Pages</span>
+    </footer>
+  </div>
+  <% if (theme.views && theme.views.enabled && theme.views.provider === 'busuanzi') { %>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <% } %>
+  <%- js('js/main.js') %>
+</body>
+</html>

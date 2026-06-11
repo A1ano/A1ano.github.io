@@ -1,0 +1,75 @@
+<section class="home-hero">
+  <div class="hero-bg" style="--hero-image: url('<%- url_for(theme.hero || '/images/hero-cover.png') %>');" aria-hidden="true"></div>
+  <div class="hero-mask" aria-hidden="true"></div>
+  <div class="hero-profile">
+    <img class="hero-avatar" src="<%- url_for(theme.avatar || '/images/avatar.png') %>" alt="">
+    <h1><%= config.description || '白雪却嫌春色晚，故穿庭树作飞花。' %></h1>
+    <p><%= config.subtitle %></p>
+  </div>
+</section>
+
+<% var recentPosts = site.posts.sort('-date').toArray().slice(0, 6); %>
+
+<section class="post-list-wrap" aria-label="Latest posts">
+  <div class="section-title">
+    <span>Latest</span>
+    <h2>最新文章</h2>
+  </div>
+
+  <div class="home-content">
+    <div class="post-list">
+    <% page.posts.each(function(post) { %>
+      <% var cover = post.cover || theme.default_cover || theme.hero || '/images/hero-cover.png'; %>
+      <article class="post-item">
+        <a class="post-cover" href="<%- url_for(post.path) %>" aria-label="<%= post.title %>">
+          <img src="<%- url_for(cover) %>" alt="">
+        </a>
+        <div class="post-card-body">
+          <a class="post-link" href="<%- url_for(post.path) %>">
+            <h2><%= post.title %></h2>
+          </a>
+          <% if (post.tags && post.tags.length) { %>
+            <div class="tag-row">
+              <% post.tags.each(function(tag) { %>
+                <span>#<%= tag.name %></span>
+              <% }) %>
+            </div>
+          <% } %>
+          <p><%= truncate(strip_html(post.excerpt || post.content), { length: 150 }) %></p>
+          <footer class="post-card-footer">
+            <time datetime="<%= date_xml(post.date) %>">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span><%= date(post.date, 'YYYY-MM-DD') %></span>
+            </time>
+            <a class="read-more" href="<%- url_for(post.path) %>">阅读全文 →</a>
+          </footer>
+        </div>
+      </article>
+    <% }) %>
+    </div>
+
+    <aside class="home-sidebar" aria-label="Recent posts">
+      <section class="sidebar-card">
+        <h3>最近文章</h3>
+        <div class="recent-list">
+          <% recentPosts.forEach(function(post) { %>
+            <% var cover = post.cover || theme.default_cover || theme.hero || '/images/hero-cover.png'; %>
+            <a class="recent-item" href="<%- url_for(post.path) %>">
+              <img src="<%- url_for(cover) %>" alt="">
+              <span>
+                <strong><%= post.title %></strong>
+                <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'YYYY-MM-DD') %></time>
+              </span>
+            </a>
+          <% }) %>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <% if (page.total > 1) { %>
+    <nav class="pagination" aria-label="Pagination">
+      <%- paginator({ prev_text: 'Newer', next_text: 'Older' }) %>
+    </nav>
+  <% } %>
+</section>

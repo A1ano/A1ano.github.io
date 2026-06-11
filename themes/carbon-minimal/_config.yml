@@ -1,0 +1,38 @@
+nav:
+  - name: 首页
+    path: /
+    icon: home
+  - name: 日志
+    path: /logs/
+    icon: logs
+  - name: 友链
+    path: /friends/
+    icon: link
+  - name: 关于
+    path: /about/
+    icon: user
+
+social:
+  GitHub: https://github.com/yourname
+
+brand_icon: /images/brand-star.jpg
+favicon: /images/favicon-music.jpg
+avatar: /images/avatar-profile.png
+hero: /images/hero-green.jpg
+default_cover: /images/hero-green.jpg
+accent: "#58a6ff"
+
+views:
+  provider: busuanzi
+  enabled: true
+
+comments:
+  provider: giscus
+  enabled: false
+  repo:
+  repo_id:
+  category: General
+  category_id:
+  mapping: pathname
+  theme: transparent_dark
+  lang: zh-CN

@@ -1,0 +1,31 @@
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal dark personal blog powered by Hexo and GitHub Pages.",
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "scripts": {
+    "hexo": "node ./node_modules/hexo-cli/bin/hexo",
+    "clean": "npm run hexo -- clean",
+    "build": "npm run hexo -- generate",
+    "server": "npm run hexo -- server --draft --port 4000",
+    "deploy": "npm run hexo -- clean && npm run hexo -- deploy"
+  },
+  "dependencies": {
+    "hexo": "^7.3.0",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0"
+  },
+  "devDependencies": {
+    "hexo-cli": "^4.3.2"
+  }
+}
