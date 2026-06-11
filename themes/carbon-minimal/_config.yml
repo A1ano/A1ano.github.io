@@ -28,11 +28,11 @@ views:
 
 comments:
   provider: giscus
-  enabled: false
-  repo:
-  repo_id:
+  enabled: true
+  repo: A1ano/A1ano.github.io
+  repo_id: R_kgDOS309aw
   category: General
-  category_id:
+  category_id: DIC_kwDOS309a84C-99P
   mapping: pathname
   theme: transparent_dark
   lang: zh-CN
