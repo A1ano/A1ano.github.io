@@ -1,0 +1,1208 @@
+[
+  {
+    "number": 1,
+    "name": "中国国际大学生创新大赛",
+    "rawRegistrationTime": "2026.05 – 07月中旬",
+    "rawContestTime": "2026.10（总决赛）",
+    "rawOfficialSite": "全国大学生创业服务网",
+    "rawEvidence": "官网公告页",
+    "rawNotes": "2026最新。5月系统全面开放，7月截止各省提报。"
+  },
+  {
+    "number": 2,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "rawRegistrationTime": "2025.03 – 06月",
+    "rawContestTime": "2025.11上旬",
+    "rawOfficialSite": "挑战杯官网",
+    "rawEvidence": "赛事文件章程",
+    "rawNotes": "2025数据。逢单数年举办国赛，2026为校内孵化选拔期。"
+  },
+  {
+    "number": 3,
+    "name": "“挑战杯”中国大学生创业计划大赛",
+    "rawRegistrationTime": "2026.03 – 06月（省赛）",
+    "rawContestTime": "2026.10 – 11月",
+    "rawOfficialSite": "挑战杯官网",
+    "rawEvidence": "赛事文件章程",
+    "rawNotes": "2026最新。双数年举办国赛，目前各省赛正陆续收尾。"
+  },
+  {
+    "number": 4,
+    "name": "全国大学生创新创业训练计划年会展示",
+    "rawRegistrationTime": "2026.06 – 07月（推荐）",
+    "rawContestTime": "2026.11 – 12月",
+    "rawOfficialSite": "大创项目平台",
+    "rawEvidence": "年会通知公告",
+    "rawNotes": "2026最新。现阶段为各高校及地方教育厅成果推荐期。"
+  },
+  {
+    "number": 5,
+    "name": "全国大学生电子设计竞赛",
+    "rawRegistrationTime": "2026.03 – 05月",
+    "rawContestTime": "2026.07底 – 08初",
+    "rawOfficialSite": "电赛培训网",
+    "rawEvidence": "2026专题赛通知",
+    "rawNotes": "2026最新。今年为TI杯模拟电子系统专题赛，7月线下测评。"
+  },
+  {
+    "number": 6,
+    "name": "全国大学生智能汽车竞赛",
+    "rawRegistrationTime": "2025.12 – 2026.03",
+    "rawContestTime": "2026.07分赛/08国赛",
+    "rawOfficialSite": "智能车竞赛网",
+    "rawEvidence": "竞赛章程与规则汇总",
+    "rawNotes": "2026最新。第21届赛事，春季截止报名，7月入正赛。"
+  },
+  {
+    "number": 7,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛",
+    "rawRegistrationTime": "2025.03.05 – 04.25",
+    "rawContestTime": "2025.05初赛/08决赛",
+    "rawOfficialSite": "嵌入式大赛官网",
+    "rawEvidence": "芯片应用赛道通知",
+    "rawNotes": "2025数据。2026年度多赛道芯片板卡发放与大纲正滚动更新。"
+  },
+  {
+    "number": 8,
+    "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+    "rawRegistrationTime": "2025.12.26 – 2026.03.10",
+    "rawContestTime": "2026.03-04省/05-06总",
+    "rawOfficialSite": "大唐杯官方平台",
+    "rawEvidence": "第13届大唐杯公告",
+    "rawNotes": "2026最新。本届国赛总决赛阶段已在密集进行或近期收尾。"
+  },
+  {
+    "number": 9,
+    "name": "全国大学生机器人大赛-①RoboMaster",
+    "rawRegistrationTime": "2025.10.29 – 11.13",
+    "rawContestTime": "2026.03-04联盟/05-08国",
+    "rawOfficialSite": "RoboMaster官网",
+    "rawEvidence": "超级对抗赛章程",
+    "rawNotes": "2026最新。赛季跨年制，前一年底截止报名，次年正赛。"
+  },
+  {
+    "number": 10,
+    "name": "全国大学生节能减排社会实践与科技竞赛",
+    "rawRegistrationTime": "2026.03.23 – 05.20",
+    "rawContestTime": "2026.08（全国总决赛）",
+    "rawOfficialSite": "节能减排竞赛网",
+    "rawEvidence": "第19届申报通知",
+    "rawNotes": "2026最新。第19届“大工能动杯”，5月下旬已截止提报。"
+  },
+  {
+    "number": 11,
+    "name": "中国高校计算机大赛-②团体程序设计天梯赛",
+    "rawRegistrationTime": "2026.01 – 03月中旬",
+    "rawContestTime": "2026.04.18",
+    "rawOfficialSite": "团体程序设计天梯赛",
+    "rawEvidence": "天梯赛竞赛规则",
+    "rawNotes": "2026最新。第11届正赛已于4月18日举行全国同步线下赛。"
+  },
+  {
+    "number": 12,
+    "name": "中国高校计算机大赛-⑤人工智能创意赛",
+    "rawRegistrationTime": "2026.05 – 06月中旬",
+    "rawContestTime": "2026.07初赛/11总决赛",
+    "rawOfficialSite": "中国高校计算机大赛",
+    "rawEvidence": "华为开发者活动平台",
+    "rawNotes": "2026最新。属于年中及下半年运行的传统IT核心大项。"
+  },
+  {
+    "number": 13,
+    "name": "“中国软件杯”大学生软件设计大赛",
+    "rawRegistrationTime": "2026.03.24 – 06.30",
+    "rawContestTime": "2026.07选拔/08总决赛",
+    "rawOfficialSite": "中国软件杯官网",
+    "rawEvidence": "第15届软件杯通知",
+    "rawNotes": "2026最新。第15届赛事，系统网报与作品提交于6.30统一截止。"
+  },
+  {
+    "number": 14,
+    "name": "中国高校计算机大赛-①大数据挑战赛",
+    "rawRegistrationTime": "2026.03 – 05月中下旬",
+    "rawContestTime": "2026.05 – 07月评审",
+    "rawOfficialSite": "清华大数据研究中心",
+    "rawEvidence": "和鲸社区2026平台",
+    "rawNotes": "2026最新。2026届平台已锁定组队，目前正处于作品迭代。"
+  },
+  {
+    "number": 15,
+    "name": "中国高校计算机大赛-④网络技术挑战赛",
+    "rawRegistrationTime": "2026.03 – 04月上旬",
+    "rawContestTime": "2026.06.15-18选拔提报",
+    "rawOfficialSite": "网络技术挑战赛官网",
+    "rawEvidence": "网络赛通知及延期公告",
+    "rawNotes": "2026最新。资格赛已过，6月中旬正处于选拔赛作品提交期。"
+  },
+  {
+    "number": 16,
+    "name": "“学创杯”全国大学生创业综合模拟大赛",
+    "rawRegistrationTime": "2026.03 – 05月Ref",
+    "rawContestTime": "2026.05-06省/10总决赛",
+    "rawOfficialSite": "学创杯官网",
+    "rawEvidence": "学创杯专项评审公告",
+    "rawNotes": "2026最新。第13届赛事，各校院级推荐与省赛正交替进行。"
+  },
+  {
+    "number": 17,
+    "name": "全国大学生统计建模大赛",
+    "rawRegistrationTime": "2026.03 – 04.20",
+    "rawContestTime": "2026.05校赛/06省赛评审",
+    "rawOfficialSite": "全国大学生统计建模网",
+    "rawEvidence": "第12届全国统计通知",
+    "rawNotes": "2026最新。第12届赛事，目前各省赛区正进入密集省评阶段。"
+  },
+  {
+    "number": 18,
+    "name": "两岸新锐设计竞赛·华灿奖",
+    "rawRegistrationTime": "2025.04 – 09.30",
+    "rawContestTime": "2025.10校选/11-12总决",
+    "rawOfficialSite": "华灿奖官网",
+    "rawEvidence": "华灿奖设计竞赛规程",
+    "rawNotes": "2025数据。该赛周期长且多跨年举行，新一轮全球征集待发。"
+  },
+  {
+    "number": 19,
+    "name": "全国大学生数学建模竞赛",
+    "rawRegistrationTime": "2025.05 – 09月初",
+    "rawContestTime": "2025.09.04 – 09.07",
+    "rawOfficialSite": "全国大学生数学建模网",
+    "rawEvidence": "高教社杯数模章程",
+    "rawNotes": "2025数据。2026国赛正式通知通常在6月下旬发，9月固定开赛。"
+  },
+  {
+    "number": 20,
+    "name": "全国大学生金相技能大赛",
+    "rawRegistrationTime": "2026.01 – 03.31",
+    "rawContestTime": "2026.05分赛/07全国决赛",
+    "rawOfficialSite": "全国大学生金相技能网",
+    "rawEvidence": "第15届金相实验指南",
+    "rawNotes": "2026最新。省赛5月已顺利收尾，7月将赴哈工大决出高下。"
+  },
+  {
+    "number": 21,
+    "name": "全国大学生测绘学科创新创业智能大赛",
+    "rawRegistrationTime": "2026.04 – 06月中旬",
+    "rawContestTime": "2026.07月中下旬",
+    "rawOfficialSite": "中国测绘学会教指委",
+    "rawEvidence": "测绘大赛通知公告栏",
+    "rawNotes": "2026最新。进入6月后网络系统截止，7月开展线上智能赛。"
+  },
+  {
+    "number": 22,
+    "name": "中国大学生服务外包创新创业大赛",
+    "rawRegistrationTime": "2025.11 – 2026.03",
+    "rawContestTime": "2026.04-05区/08国决赛",
+    "rawOfficialSite": "服务外包大赛官网",
+    "rawEvidence": "第17届服外大赛章程",
+    "rawNotes": "2026最新。第17届目前正处于区域赛评审向国赛过渡期。"
+  },
+  {
+    "number": 23,
+    "name": "华为ICT大赛",
+    "rawRegistrationTime": "2025.09 – 12月",
+    "rawContestTime": "2026.01-03国/05全球总",
+    "rawOfficialSite": "华为人才在线平台",
+    "rawEvidence": "华为ICT大赛大本营",
+    "rawNotes": "2026最新。跨年学期赛制，2025-2026届全球赛已于5月闭幕。"
+  },
+  {
+    "number": 24,
+    "name": "全国大学生集成电路创新创业大赛",
+    "rawRegistrationTime": "2026.01 – 03月",
+    "rawContestTime": "2026.05-07分赛/08总决",
+    "rawOfficialSite": "集创赛官网",
+    "rawEvidence": "第10届集创赛指南",
+    "rawNotes": "2026最新。第10届赛事，目前密集开展分赛区初评与答辩。"
+  },
+  {
+    "number": 25,
+    "name": "“西门子杯”中国智能制造挑战赛",
+    "rawRegistrationTime": "2026.03 – 05.31",
+    "rawContestTime": "2026.07初赛/08全国决赛",
+    "rawOfficialSite": "西门子挑战赛官网",
+    "rawEvidence": "2026年竞赛正文大纲",
+    "rawNotes": "2026最新。5月底已截止网络报名，7月分赛区线下对抗爆发。"
+  },
+  {
+    "number": 26,
+    "name": "睿抗机器人开发者大赛(RAICOM)-CAIR",
+    "rawRegistrationTime": "2026.04 – 06.15",
+    "rawContestTime": "2026.07省赛/08总决赛",
+    "rawOfficialSite": "睿抗机器人大赛官网",
+    "rawEvidence": "2026睿抗全赛道通知",
+    "rawNotes": "2026最新。请注意本项对应CAIR工程竞技（魔力元宝等）。"
+  },
+  {
+    "number": 27,
+    "name": "中国高校智能机器人创意大赛",
+    "rawRegistrationTime": "2026.03 – 06.15",
+    "rawContestTime": "2026.07省选/08全国决赛",
+    "rawOfficialSite": "中国高校智能机器人创意",
+    "rawEvidence": "第九届机器人创意章程",
+    "rawNotes": "2026最新。目前正处于全国作品在线提报的最后冲刺期。"
+  },
+  {
+    "number": 28,
+    "name": "中国机器人大赛暨RoboCup中国赛",
+    "rawRegistrationTime": "2025.06 – 08月",
+    "rawContestTime": "2025.10 – 11月",
+    "rawOfficialSite": "中国自动化学会竞赛网",
+    "rawEvidence": "RoboCup中国赛规则",
+    "rawNotes": "2025数据。2026年度的正式决赛通知与报名多在年中更新。"
+  },
+  {
+    "number": 29,
+    "name": "中国机器人及人工智能大赛",
+    "rawRegistrationTime": "2026.04 – 05.20",
+    "rawContestTime": "2026.06省选/08全国决赛",
+    "rawOfficialSite": "机器人及人工智能大赛",
+    "rawEvidence": "第28届大赛通知细则",
+    "rawNotes": "2026最新。第28届，目前各省赛区正紧密开展省赛推选。"
+  },
+  {
+    "number": 30,
+    "name": "全国大学生数字媒体科技作品及创意赛",
+    "rawRegistrationTime": "2025.06 – 09月",
+    "rawContestTime": "2025.11（全国总决赛）",
+    "rawOfficialSite": "数媒科技竞赛官网",
+    "rawEvidence": "第13届数媒竞赛章程",
+    "rawNotes": "2025数据。新一届（第14届）赛事发文预计在年中正式下发。"
+  },
+  {
+    "number": 31,
+    "name": "全国三维数字化创新设计大赛(常规赛)",
+    "rawRegistrationTime": "2026.04.03 – 06.30",
+    "rawContestTime": "2026.08-10省/11-12国",
+    "rawOfficialSite": "全国3D大赛官网",
+    "rawEvidence": "年度竞赛参赛指南说明",
+    "rawNotes": "2026最新。属于常规年度主赛道（不含制造专项及精英赛）。"
+  },
+  {
+    "number": 32,
+    "name": "全球校园人工智能算法精英大赛",
+    "rawRegistrationTime": "05.20 – 10.10前后",
+    "rawContestTime": "2026.10-11省/11-12国",
+    "rawOfficialSite": "全球校园算法赛网",
+    "rawEvidence": "江苏省人工智能学会",
+    "rawNotes": "2025参考。属于下半年启动的重点IT大项，江苏AI学会主导。"
+  },
+  {
+    "number": 33,
+    "name": "ACM-ICPC国际大学生程序设计竞赛",
+    "rawRegistrationTime": "2026.03春/07-09秋",
+    "rawContestTime": "2026.04-05邀/10-12区",
+    "rawOfficialSite": "亚洲区北大总部入口",
+    "rawEvidence": "ICPC全球官方平台",
+    "rawNotes": "2026最新。全球多赛站制，秋季亚洲区密集进行正赛对抗。"
+  },
+  {
+    "number": 34,
+    "name": "百度之星 程序设计大赛",
+    "rawRegistrationTime": "2026.04 – 05.25",
+    "rawContestTime": "2026.06-07网/08-10总",
+    "rawOfficialSite": "百度之星官网",
+    "rawEvidence": "百度之星章程公告栏",
+    "rawNotes": "2026最新。包含全国统一网络预赛和后续现场线下总决赛。"
+  },
+  {
+    "number": 35,
+    "name": "全国大学生信息安全竞赛",
+    "rawRegistrationTime": "2026.04 – 06.22（作品）",
+    "rawContestTime": "2026.06校/07-08总决赛",
+    "rawOfficialSite": "信安大赛官网",
+    "rawEvidence": "第19届赛事通知公告",
+    "rawNotes": "2026最新。第19届赛事，分为自由作品赛和创新实践两个方向。"
+  },
+  {
+    "number": 36,
+    "name": "全国企业竞争模拟大赛",
+    "rawRegistrationTime": "2026.03.22前（校赛）",
+    "rawContestTime": "2026.03-04复/05.23总",
+    "rawOfficialSite": "全国企模赛平台",
+    "rawEvidence": "大赛规程日程安排表",
+    "rawNotes": "2026最新。含企业决策、数智沙盘等，5月全国决赛已闭幕。"
+  },
+  {
+    "number": 37,
+    "name": "全国大学生市场调查与分析大赛",
+    "rawRegistrationTime": "2025.09 – 10.31",
+    "rawContestTime": "2025.11网考/2026.05国",
+    "rawOfficialSite": "中国商业统计学会",
+    "rawEvidence": "第16届市调大赛章程",
+    "rawNotes": "2026最新。跨年赛制，“正大杯”第16届全国决赛5月落幕。"
+  },
+  {
+    "number": 38,
+    "name": "全国大学生电子商务“三创赛”挑战赛",
+    "rawRegistrationTime": "2025.10 – 2026.01.20",
+    "rawContestTime": "2026.03-04校/07-08国",
+    "rawOfficialSite": "三创赛官网",
+    "rawEvidence": "第16届三创赛实施指南",
+    "rawNotes": "2026最新。各省省赛近期顺利收尾，7月中旬起全面进国赛。"
+  },
+  {
+    "number": 39,
+    "name": "全国大学生物流设计大赛",
+    "rawRegistrationTime": "2025.03 – 04.14",
+    "rawContestTime": "2025.05初/06复/07-08总",
+    "rawOfficialSite": "物流大赛案例平台",
+    "rawEvidence": "第九届物流大赛通知",
+    "rawNotes": "2025数据。教指委两年一届赛项，2026通常为成果转化/筹备年。"
+  },
+  {
+    "number": 40,
+    "name": "“21世纪杯”全国英语演讲比赛",
+    "rawRegistrationTime": "2026.03.01 – 04.12",
+    "rawContestTime": "2026.05-06地区/10总决",
+    "rawOfficialSite": "21世纪杯官网",
+    "rawEvidence": "大学组赛区规则细则",
+    "rawNotes": "2026最新。第三十一届赛事，目前正处于各省地区决赛期。"
+  },
+  {
+    "number": 41,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "rawRegistrationTime": "即日 – 2026.06.20",
+    "rawContestTime": "2026.06-08省/08底国赛",
+    "rawOfficialSite": "未来设计师官网",
+    "rawEvidence": "非命题赛道策略章程",
+    "rawNotes": "2026最新。第14届，6月20日系统全面截止网络投稿。"
+  },
+  {
+    "number": 42,
+    "name": "中国好创意暨全国数字艺术设计大赛",
+    "rawRegistrationTime": "2026.02.09 – 04.01",
+    "rawContestTime": "2026.04答辩/05产业推广",
+    "rawOfficialSite": "中国好创意官网",
+    "rawEvidence": "专项赛规程简章公告",
+    "rawNotes": "2026最新。第20届。百度AIGC等独立主题赛道滚动至5-6月。"
+  },
+  {
+    "number": 43,
+    "name": "全国大学生光电设计竞赛",
+    "rawRegistrationTime": "即日 – 2026.04.19",
+    "rawContestTime": "2026.05区赛/06下旬决赛",
+    "rawOfficialSite": "中国光学学会",
+    "rawEvidence": "第14届光电赛指南参考",
+    "rawNotes": "2026最新。第14届由长春理工大学承办，5月中旬截止网评。"
+  },
+  {
+    "number": 44,
+    "name": "全国大学生物理实验竞赛",
+    "rawRegistrationTime": "2026.05.15前预/09正式",
+    "rawContestTime": "2026.06-07初评/09-11决",
+    "rawOfficialSite": "物理实验创新赛平台",
+    "rawEvidence": "第12届物理实验通知",
+    "rawNotes": "精准修复。升级为摩课网专业集成服务平台，9月正式上传视频。"
+  },
+  {
+    "number": 45,
+    "name": "全国大学生化学实验创新设计大赛",
+    "rawRegistrationTime": "2026.03 – 06.01（省选）",
+    "rawContestTime": "2026.06-07分区/2027总",
+    "rawOfficialSite": "化学实验创新赛网",
+    "rawEvidence": "全国化学实验赛章程",
+    "rawNotes": "2026最新。第六届，涵盖新创、科普等四赛道，周期较长。"
+  },
+  {
+    "number": 46,
+    "name": "全国大学生能源经济学术创意大赛",
+    "rawRegistrationTime": "2025.10.13 – 11.16",
+    "rawContestTime": "2026.02-03提报/05总决",
+    "rawOfficialSite": "能经大赛官方系统",
+    "rawEvidence": "第12届能经大赛通知",
+    "rawNotes": "2026最新。跨年赛制（前年秋组队）。5月在安徽财经大学闭幕。"
+  },
+  {
+    "number": 47,
+    "name": "全国大学生生命科学竞赛(CULSC)",
+    "rawRegistrationTime": "2026.01.20 – 04.20",
+    "rawContestTime": "2026.05网评/06省/07决赛",
+    "rawOfficialSite": "生命科学竞赛网",
+    "rawEvidence": "创新创业类通知指南",
+    "rawNotes": "2026最新。第11届创新创业类，7月在安徽农业大学现场决赛。"
+  },
+  {
+    "number": 48,
+    "name": "全国大学生物联网设计竞赛",
+    "rawRegistrationTime": "2026.04.01 – 06.15",
+    "rawContestTime": "2026.06-07预赛/08国赛",
+    "rawOfficialSite": "物联网设计竞赛网",
+    "rawEvidence": "2026第13届竞赛通知",
+    "rawNotes": "2026最新。第13届，系统即将截止，8月开展分赛区线下决赛。"
+  },
+  {
+    "number": 49,
+    "name": "iCAN大学生创新创业大赛",
+    "rawRegistrationTime": "2025.04.01 – 07.31",
+    "rawContestTime": "2025.08-09校/11国赛总",
+    "rawOfficialSite": "iCAN大赛官网",
+    "rawEvidence": "第19届iCAN大赛简章",
+    "rawNotes": "2025数据。第20届（2026年）全国整体排程多于年中更新。"
+  },
+  {
+    "number": 50,
+    "name": "全国3D大赛(数字化设计与制造)",
+    "rawRegistrationTime": "2026.06.05 – 08.31",
+    "rawContestTime": "2026.06-08校/09-10省",
+    "rawOfficialSite": "全国3D大赛官网",
+    "rawEvidence": "第19届制造专项指南",
+    "rawNotes": "2026最新。第19届独立专项赛道，需用3Dshow专辑系统提报。"
+  },
+  {
+    "number": 51,
+    "name": "中国大学生工程实践与创新能力大赛",
+    "rawRegistrationTime": "2026.03 – 04月下旬",
+    "rawContestTime": "2026.05-06省赛/11-12国",
+    "rawOfficialSite": "工创大赛综合服务网",
+    "rawEvidence": "工创赛运行命题指南",
+    "rawNotes": "2026最新。高教司主导，各省属选拔报名截止由地方厅另发文。"
+  },
+  {
+    "number": 52,
+    "name": "中国大学生机械工程创新创意大赛",
+    "rawRegistrationTime": "2026.03 – 05.30",
+    "rawContestTime": "2026.07-09选拔/11决赛",
+    "rawOfficialSite": "智能制造赛官网",
+    "rawEvidence": "工业工程精益公告栏",
+    "rawNotes": "2026最新。下设多个专业细分赛项，各赛道各自接收盖章表。"
+  },
+  {
+    "number": 53,
+    "name": "码蹄杯全国职业院校程序设计大赛",
+    "rawRegistrationTime": "2025.12.12 – 2026.03.21",
+    "rawContestTime": "2026.03-05初赛/07-08总",
+    "rawOfficialSite": "码蹄杯官网",
+    "rawEvidence": "第八届码蹄杯规程栏",
+    "rawNotes": "2026最新。第8届。设立本科/高职专项，通过早马票网络多场举行。"
+  },
+  {
+    "number": 54,
+    "name": "睿抗机器人开发者大赛-创意赛道",
+    "rawRegistrationTime": "2026.04 – 07.01",
+    "rawContestTime": "2026.05-07省赛/08国总",
+    "rawOfficialSite": "睿抗Raicom官网",
+    "rawEvidence": "创意赛道规则细则",
+    "rawNotes": "2026最新。特指数字文化(CAIA)、创客(CAIM)与信创(CAIP)。"
+  },
+  {
+    "number": 55,
+    "name": "全国大学生计算机系统能力大赛",
+    "rawRegistrationTime": "2026.03.25 – 06.20",
+    "rawContestTime": "2026.08.05 – 08.22",
+    "rawOfficialSite": "系统能力大赛官网",
+    "rawEvidence": "2026年官方通知公告",
+    "rawNotes": "2026最新。与您自查报告一致，四大主要赛道网报火热收尾中。"
+  },
+  {
+    "number": 56,
+    "name": "全国大学生信息安全与对抗技术竞赛",
+    "rawRegistrationTime": "2026.03 – 05月上旬",
+    "rawContestTime": "2026.05挑战赛/07-08总",
+    "rawOfficialSite": "ISCC实验中心官网",
+    "rawEvidence": "ISCC线上赛指南说明",
+    "rawNotes": "2026最新。第23届(ISCC2026)，5月中旬截止挑战赛WriteUp。"
+  },
+  {
+    "number": 57,
+    "name": "“科云杯”全国大学生财会职业能力大赛",
+    "rawRegistrationTime": "2026.03.30 – 05.06",
+    "rawContestTime": "2026.05.23选拔/10总决",
+    "rawOfficialSite": "科云技能大赛官网",
+    "rawEvidence": "科云杯财会赛操作指南",
+    "rawNotes": "2026最新。本科/高职赛道全线采用云端系统集中完成税务实务比拼。"
+  },
+  {
+    "number": 58,
+    "name": "一带一路暨金砖国家技能发展与技术创新大赛",
+    "rawRegistrationTime": "2026.04.30 – 滚动报名",
+    "rawContestTime": "2026.05起至11月（分批）",
+    "rawOfficialSite": "金砖大赛官网",
+    "rawEvidence": "信息服务报名平台入口",
+    "rawNotes": "2026最新。第10届。多国国际赛站性质，子项目极多且分散。"
+  },
+  {
+    "number": 59,
+    "name": "全国高校BIM毕业设计创新大赛",
+    "rawRegistrationTime": "2025.09.25 – 10.17",
+    "rawContestTime": "2025.11-12校/2026.04决",
+    "rawOfficialSite": "广联达BIM毕业设计",
+    "rawEvidence": "国际高校BIM创新通知",
+    "rawNotes": "2026最新。跨年学期制（现名国际BIM创新赛），春季决赛落幕。"
+  },
+  {
+    "number": 60,
+    "name": "“外教社杯”全国高校学生跨文化能力大赛",
+    "rawRegistrationTime": "2026.04 – 09月（校滚动）",
+    "rawContestTime": "2026.05-10省选/11-12总",
+    "rawOfficialSite": "外教社跨文化能力网",
+    "rawEvidence": "第九届跨文化章程大纲",
+    "rawNotes": "2026最新。第九届赛事，全国各高校校内初选正密集进行。"
+  },
+  {
+    "number": 61,
+    "name": "全国大学生广告艺术大赛",
+    "rawRegistrationTime": "2026.05.10 – 06.12",
+    "rawContestTime": "2026.06中下旬省/08-09国",
+    "rawOfficialSite": "大广赛官网",
+    "rawEvidence": "第18届大广赛参赛指南",
+    "rawNotes": "2026最新。第18届线上投稿关闭，7月5日前由各区上报全国。"
+  },
+  {
+    "number": 62,
+    "name": "米兰设计周——中国高校设计学科师生展",
+    "rawRegistrationTime": "2025.11 – 2026.06（滚动）",
+    "rawContestTime": "2026.04-05省评/05-06国",
+    "rawOfficialSite": "米兰设计周高校展官网",
+    "rawEvidence": "大赛通知章程文件入口",
+    "rawNotes": "2026最新。第10届非命题大类截止，部分专项命题滚动至6月。"
+  },
+  {
+    "number": 63,
+    "name": "中国大学生计算机设计大赛",
+    "rawRegistrationTime": "2026.03.24 – 05.29",
+    "rawContestTime": "2026.07.16 – 08.14",
+    "rawOfficialSite": "计算机设计大赛官网",
+    "rawEvidence": "第19届大赛章程大纲",
+    "rawNotes": "2026最新。第19届赛事，目前正由各省评过渡至全国各大类决赛。"
+  },
+  {
+    "number": 64,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛(电子)",
+    "rawRegistrationTime": "2025.10.20 – 12.15",
+    "rawContestTime": "2026.04省赛/05下旬-06国",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届蓝桥杯大赛通知",
+    "rawNotes": "2026最新。第17届个人赛（单片机/嵌入式等）。4月完成省赛。"
+  },
+  {
+    "number": 65,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛(5G)",
+    "rawRegistrationTime": "2025.10.20 – 12.15",
+    "rawContestTime": "2026.04.25省/05-06国赛",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届蓝桥杯大赛通知",
+    "rawNotes": "2026最新。作为独立科目于4月25日与物联网同日通考省赛。"
+  },
+  {
+    "number": 66,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛(网安)",
+    "rawRegistrationTime": "2025.10.20 – 12.15",
+    "rawContestTime": "2026.04.25省/05-06国赛",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届蓝桥杯大赛通知",
+    "rawNotes": "2026最新。软件赛细分重要分支，4月下旬现场考完并决出省奖。"
+  },
+  {
+    "number": 67,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛(常规)",
+    "rawRegistrationTime": "软:至前年底 艺:至2026.04",
+    "rawContestTime": "软省:04月/艺术评审:05-06",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届蓝桥杯大赛通知",
+    "rawNotes": "2026最新。软件类机考省赛完结；视觉艺术赛正开展国评。"
+  },
+  {
+    "number": 68,
+    "name": "全国高校商业精英挑战赛(多方向)",
+    "rawRegistrationTime": "2026.01 – 08/09月（滚动）",
+    "rawContestTime": "2026.05、10、11月分批",
+    "rawOfficialSite": "商业精英挑战赛官网",
+    "rawEvidence": "精英赛一体化管理平台",
+    "rawNotes": "2026最新。策划类5月完赛，数智沙盘/案例赛道尚在组队期。"
+  },
+  {
+    "number": 69,
+    "name": "四川省大学生电子设计竞赛",
+    "rawRegistrationTime": "2026.03 – 05（各校选拔）",
+    "rawContestTime": "2026.07月下旬",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "高校教务/承办公告栏",
+    "rawNotes": "链接优化。省级B1类核心，学生需登录省平台填报与确认。"
+  },
+  {
+    "number": 70,
+    "name": "四川省大学生智能汽车竞赛",
+    "rawRegistrationTime": "2026.03 – 04月",
+    "rawContestTime": "2026.06.06前后",
+    "rawOfficialSite": "乐山师范学院网",
+    "rawEvidence": "省教厅高教处通知",
+    "rawNotes": "2026最新。本届由乐山师院承办，全省正赛已在6月闭幕。"
+  },
+  {
+    "number": 71,
+    "name": "四川省大学生信息安全技术大赛",
+    "rawRegistrationTime": "2026.04 – 05月",
+    "rawContestTime": "2026.05月下旬 – 06月",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "成信大/川大教务通知",
+    "rawNotes": "2026最新。多由成都信息工程大学承办，考核CTF与渗透对抗。"
+  },
+  {
+    "number": 72,
+    "name": "四川省大学生统计建模大赛",
+    "rawRegistrationTime": "2026.03 – 04.20",
+    "rawContestTime": "2026.05校选/06省赛评审",
+    "rawOfficialSite": "全国统计建模网",
+    "rawEvidence": "第12届省选通知",
+    "rawNotes": "2026最新。直接并入全国统计建模大赛四川分赛区一并运转。"
+  },
+  {
+    "number": 73,
+    "name": "四川省大学生射频微波电路设计竞赛",
+    "rawRegistrationTime": "2025.09 – 10月",
+    "rawContestTime": "2025.11月",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "各校教务双创版块",
+    "rawNotes": "2025数据。省属特色电子信息项，新一轮发文预计在秋季。"
+  },
+  {
+    "number": 74,
+    "name": "四川省大学生区块链技术应用创新大赛",
+    "rawRegistrationTime": "2025.10 – 11月",
+    "rawContestTime": "2025.11月下旬",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "省竞赛管理平台公告",
+    "rawNotes": "2025数据。多由省内设置有区块链/软件的重点工科院校执办。"
+  },
+  {
+    "number": 75,
+    "name": "四川省大学生供应链优化管理大赛",
+    "rawRegistrationTime": "2026.04 – 05月",
+    "rawContestTime": "2026.05.23（决赛）",
+    "rawOfficialSite": "西南交通大学教务网",
+    "rawEvidence": "西南交大教务公告栏",
+    "rawNotes": "2026最新。由西南交大等具备顶尖供应链优势的高校承办。"
+  },
+  {
+    "number": 76,
+    "name": "四川省“外语讲好中国故事”短视频赛",
+    "rawRegistrationTime": "2026.04 – 08.31",
+    "rawContestTime": "2026.09 – 10月省评",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "省高等教育学会通知",
+    "rawNotes": "2026最新。全省双语及短视频征集，暑期持续接收网络报送。"
+  },
+  {
+    "number": 77,
+    "name": "四川省大学生金相技能大赛",
+    "rawRegistrationTime": "2026.03 – 04月",
+    "rawContestTime": "2026.05.22 – 24",
+    "rawOfficialSite": "全国大学生金相网",
+    "rawEvidence": "金相省预赛公告栏",
+    "rawNotes": "2026最新。国赛四川赛区预选赛，5月已在成都理工完赛。"
+  },
+  {
+    "number": 78,
+    "name": "四川省大学生节能减排实践与科技竞赛",
+    "rawRegistrationTime": "2026.03 – 05月",
+    "rawContestTime": "2026.06月评审",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "川大双创示范基地",
+    "rawNotes": "2026最新。省赛一般与国赛的四川省内推选流程平行或结合开展。"
+  },
+  {
+    "number": 79,
+    "name": "四川省大学生科普讲解大赛",
+    "rawRegistrationTime": "2025.05 – 06月",
+    "rawContestTime": "2025.06月下旬",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "省教厅高教发文通知",
+    "rawNotes": "2025数据。全省推荐名额往往在5-6月中下旬滚动下达各大。"
+  },
+  {
+    "number": 80,
+    "name": "四川省大学生集成电路创新创业大赛",
+    "rawRegistrationTime": "2026.01 – 03月",
+    "rawContestTime": "2026.05 – 06分赛评审",
+    "rawOfficialSite": "集创赛官网",
+    "rawEvidence": "西南赛区省指南入口",
+    "rawNotes": "2026最新。本项彻底融入全国集创赛西南分赛区统一接收。"
+  },
+  {
+    "number": 81,
+    "name": "川渝大学生人工智能大赛",
+    "rawRegistrationTime": "2025.04 – 05.10",
+    "rawContestTime": "2025.05 – 11月多赛段",
+    "rawOfficialSite": "腾讯开悟开放平台",
+    "rawEvidence": "开悟川渝赛公开指南",
+    "rawNotes": "2025数据。依托腾讯开悟。2026新一轮大纲命题在下半年。"
+  },
+  {
+    "number": 82,
+    "name": "四川省大学生人工智能算法精英大赛",
+    "rawRegistrationTime": "2026.05.20 – 10.10",
+    "rawContestTime": "2026.10省/11-12国总",
+    "rawOfficialSite": "全球校园算法赛网",
+    "rawEvidence": "江苏AI学会平台入口",
+    "rawNotes": "2026最新。直接作为“全球校园算法赛”四川赛区选拔运作。"
+  },
+  {
+    "number": 83,
+    "name": "四川省大学生测绘技能竞赛",
+    "rawRegistrationTime": "2026.06.08 – 07.10",
+    "rawContestTime": "2026.09.18 – 09.20",
+    "rawOfficialSite": "摩课书院竞赛平台",
+    "rawEvidence": "第11届省赛通知入口",
+    "rawNotes": "2026最新。第11届省赛，由西南交通大学整体负责协办。"
+  },
+  {
+    "number": 84,
+    "name": "四川省全生命周期碳中和创新大赛",
+    "rawRegistrationTime": "2025.05 – 06月",
+    "rawContestTime": "2025.07 – 11月评审",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "成信大资环学院公告",
+    "rawNotes": "2025数据。上届由成信大承办，新一届批文在中下旬滚动。"
+  },
+  {
+    "number": 85,
+    "name": "四川省大学生华为ICT大赛",
+    "rawRegistrationTime": "2025.09 – 12月",
+    "rawContestTime": "2026.01-03省/05全球总",
+    "rawOfficialSite": "华为人才在线平台",
+    "rawEvidence": "官方分赛区大营入口",
+    "rawNotes": "2026最新。跨年学期赛，四川省赛区胜出者直通5月全球赛。"
+  },
+  {
+    "number": 86,
+    "name": "四川省三维数字化创新大赛(除制造)",
+    "rawRegistrationTime": "2026.04.03 – 06.30",
+    "rawContestTime": "2026.08-10省/11-12国",
+    "rawOfficialSite": "全国3D大赛官网",
+    "rawEvidence": "省区参赛指南公告",
+    "rawNotes": "2026最新。本项与全国3D大赛四川分赛区合并统一系统处理。"
+  },
+  {
+    "number": 87,
+    "name": "四川省大学生市场调查与分析大赛",
+    "rawRegistrationTime": "2025.09 – 10.31",
+    "rawContestTime": "2025.11网/2026.03-04省",
+    "rawOfficialSite": "中国商业统计学会",
+    "rawEvidence": "各校教务分会通知网",
+    "rawNotes": "2026最新。“正大杯”国赛的四川省级分赛区团队实践选拔。"
+  },
+  {
+    "number": 88,
+    "name": "四川省电子商务“三创赛”挑战赛",
+    "rawRegistrationTime": "2025.10 – 2026.01.20",
+    "rawContestTime": "2026.03-04校/06上省决",
+    "rawOfficialSite": "三创赛官网",
+    "rawEvidence": "省赛实施细则公告",
+    "rawNotes": "2026最新。第16届省赛决赛已于6月上旬在省属重点校完赛。"
+  },
+  {
+    "number": 89,
+    "name": "四川省大学生物流设计大赛",
+    "rawRegistrationTime": "2025.03 – 04.14",
+    "rawContestTime": "2025.05初/07-08省决赛",
+    "rawOfficialSite": "物流大赛案例平台",
+    "rawEvidence": "全国物流赛通知文件",
+    "rawNotes": "2025数据。国赛双年制，省赛依大项排程多于单数年组织。"
+  },
+  {
+    "number": 90,
+    "name": "四川省大学生通信全网建设技术竞赛",
+    "rawRegistrationTime": "2025.06 – 09月",
+    "rawContestTime": "2025.10.17 – 10.18",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西华大学学科端入口",
+    "rawNotes": "2025数据。由四川旅游学院具体执办。新一轮发文待厅批。"
+  },
+  {
+    "number": 91,
+    "name": "四川省大学生知识产权竞赛",
+    "rawRegistrationTime": "2025.09 – 10月上旬",
+    "rawContestTime": "2025.10月下旬",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "川农大法学院网通告",
+    "rawNotes": "2025数据。西南科技大学具体执办，多在秋季10月案例对决。"
+  },
+  {
+    "number": 92,
+    "name": "四川省大学生数学竞赛",
+    "rawRegistrationTime": "2025.09 – 10.08",
+    "rawContestTime": "2025.11初赛/2026.04决",
+    "rawOfficialSite": "中国数学会",
+    "rawEvidence": "四川大学教务通知栏",
+    "rawNotes": "2026完赛。第17届全国数赛的四川省预赛，跨年学期制。"
+  },
+  {
+    "number": 93,
+    "name": "四川省大学生安全与应急创新实践赛",
+    "rawRegistrationTime": "2025.09 – 10月中旬",
+    "rawContestTime": "2025.11 – 12月中旬",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西华大学安全应急喜报",
+    "rawNotes": "2025数据。上届在西华大学完赛，主打虚拟仿真与沙盘。"
+  },
+  {
+    "number": 94,
+    "name": "四川省大学生地质技能竞赛",
+    "rawRegistrationTime": "2025.07 – 09月（校选）",
+    "rawContestTime": "2025.11月",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "成信大教务处发文",
+    "rawNotes": "2025数据。第2届由西南科大和地学教指委共同执办闭幕。"
+  },
+  {
+    "number": 95,
+    "name": "四川省大学生环保科普创意大赛",
+    "rawRegistrationTime": "2026.05.29 – 08.25",
+    "rawContestTime": "2026.08校评/11月中旬省",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "成信大校赛公告入口",
+    "rawNotes": "2026最新。今年由西华师范大学承办，目前处于作品征集。"
+  },
+  {
+    "number": 96,
+    "name": "四川省仿真创新应用大赛",
+    "rawRegistrationTime": "2025.05.01 – 10.29",
+    "rawContestTime": "2025.11月中赛区决赛",
+    "rawOfficialSite": "工信部人才交流网",
+    "rawEvidence": "中飞院教务处通知",
+    "rawNotes": "2025数据。属于国赛四川赛区，涵盖复杂工业系统建模仿真。"
+  },
+  {
+    "number": 97,
+    "name": "四川省大学生分析检测实验大赛",
+    "rawRegistrationTime": "2025.05.10 – 06.04",
+    "rawContestTime": "2025.06校/07省级决赛",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "攀枝花学院教务网栏",
+    "rawNotes": "2025数据。第4届年中进行，考基础理论加线下理化分析。"
+  },
+  {
+    "number": 98,
+    "name": "四川省大学生化学实验竞赛",
+    "rawRegistrationTime": "2025.09月上旬",
+    "rawContestTime": "2025.10 – 11月",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "成信大双创中心网端",
+    "rawNotes": "2025数据。第9届秋季学期如期完成，覆盖4大新创设计方向。"
+  },
+  {
+    "number": 99,
+    "name": "四川省大学生嵌入式设计竞赛",
+    "rawRegistrationTime": "2026.03 – 04.20",
+    "rawContestTime": "2026.07复赛/08国赛决赛",
+    "rawOfficialSite": "全国嵌入式芯片网",
+    "rawEvidence": "四川大学官方发文",
+    "rawNotes": "2026最新。挂靠第9届国赛芯片应用赛道四川赛区实施。"
+  },
+  {
+    "number": 100,
+    "name": "四川省软件信息人才赛(电子类)",
+    "rawRegistrationTime": "2025.10.20 – 12.15",
+    "rawContestTime": "2026.04分批省赛/06国赛",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届个人赛通知",
+    "rawNotes": "2026最新。即第17届“蓝桥杯”单片机、嵌入式四川省赛。"
+  },
+  {
+    "number": 101,
+    "name": "四川省软件信息人才赛(5G全网)",
+    "rawRegistrationTime": "2025.10.20 – 12.15",
+    "rawContestTime": "2026.04.25省/06国赛",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届个人赛通知",
+    "rawNotes": "2026最新。第17届蓝桥杯5G规划科目四川赛区统一机考。"
+  },
+  {
+    "number": 102,
+    "name": "四川省软件信息人才赛(常规/设计)",
+    "rawRegistrationTime": "软:前年底/艺术:2026.04",
+    "rawContestTime": "软省:04月/艺术评审:05-06",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届个人赛通知",
+    "rawNotes": "2026最新。包含C/C++、Python机考省赛及设计类作品提报。"
+  },
+  {
+    "number": 103,
+    "name": "四川省大学生机器人大赛",
+    "rawRegistrationTime": "2025.08.29 – 11月",
+    "rawContestTime": "2025.11月下旬 – 12月",
+    "rawOfficialSite": "ROBOTAC赛事网",
+    "rawEvidence": "ROBOTAC动态公告栏",
+    "rawNotes": "2025数据。主要对口全国ROBOTAC（长城烽火赛项）省选。"
+  },
+  {
+    "number": 104,
+    "name": "四川省3D大赛(数字化设计与制造)",
+    "rawRegistrationTime": "2026.06.05 – 08.31",
+    "rawContestTime": "2026.09-10省/11-12国",
+    "rawOfficialSite": "全国3D大赛官网",
+    "rawEvidence": "第19届制造专项指南",
+    "rawNotes": "2026最新。第19届制造赛道，需通过3Dshow单独专辑提报。"
+  },
+  {
+    "number": 105,
+    "name": "四川省大学生计算机设计大赛",
+    "rawRegistrationTime": "2026.03.24 – 5.29",
+    "rawContestTime": "2026.07.16 – 08.14全国总",
+    "rawOfficialSite": "计算机设计赛官网",
+    "rawEvidence": "第19届国赛章程入口",
+    "rawNotes": "2026最新。国赛四川省级选拔，5月底已截止全省系统网报。"
+  },
+  {
+    "number": 106,
+    "name": "四川省大学生睿抗机器人开发者大赛",
+    "rawRegistrationTime": "2026.04 – 07.01",
+    "rawContestTime": "2026.05-07省赛/08国总",
+    "rawOfficialSite": "睿抗Raicom官网",
+    "rawEvidence": "2026全赛道规则细则",
+    "rawNotes": "2026最新。即“睿抗(RAICOM)”四川省赛区，在线报名收尾。"
+  },
+  {
+    "number": 107,
+    "name": "四川省大学生程序设计大赛",
+    "rawRegistrationTime": "2025.04 – 05月",
+    "rawContestTime": "2025.06.07 – 08月",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西华大学信息学院公告",
+    "rawNotes": "2025数据。第17届由乐山师院与省计算机学会联办，ACM制。"
+  },
+  {
+    "number": 108,
+    "name": "四川省大学生大数据采集与分析大赛",
+    "rawRegistrationTime": "2025.09 – 10月",
+    "rawContestTime": "2025.11月下旬（决赛）",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西华大学管院通知栏",
+    "rawNotes": "2025数据。成都理工等多校轮流执办。新一轮发文在9月。"
+  },
+  {
+    "number": 109,
+    "name": "四川省大学生工业工程应用案例大赛",
+    "rawRegistrationTime": "2025.09 – 10月中旬",
+    "rawContestTime": "2025.11.15 – 16",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西华管院公示喜报入口",
+    "rawNotes": "2025数据。第10届由西南科技大学承办，切磋工程实务案例。"
+  },
+  {
+    "number": 110,
+    "name": "四川省大学生软件测试大赛",
+    "rawRegistrationTime": "2025.09.10 – 10.31",
+    "rawContestTime": "2025.11省赛/11下旬国决赛",
+    "rawOfficialSite": "全国慕测平台网",
+    "rawEvidence": "西华大学教务公告栏",
+    "rawNotes": "2025数据。挂靠国赛慕测系统，含开发者、Web与安全测试。"
+  },
+  {
+    "number": 111,
+    "name": "四川省数据科学与统计建模竞赛",
+    "rawRegistrationTime": "2025.06 – 07月上旬",
+    "rawContestTime": "2025.07月中下旬结赛",
+    "rawOfficialSite": "Datacastle数据城堡",
+    "rawEvidence": "数智风控赛详情",
+    "rawNotes": "2025数据。厅级主办。主打金融风控模型以及大数据建模。"
+  },
+  {
+    "number": 112,
+    "name": "四川省大学生数据挖掘挑战赛",
+    "rawRegistrationTime": "2025.09 – 10月",
+    "rawContestTime": "2025.10月中旬 – 11月",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "成信大教务处官方公示",
+    "rawNotes": "2025数据。第4届由攀枝花学院具体承办、泰迪智能科技协办。"
+  },
+  {
+    "number": 113,
+    "name": "四川省软件信息人才赛(网安机考)",
+    "rawRegistrationTime": "2025.10.20 – 12.15",
+    "rawContestTime": "2026.04.25省/05-06国赛",
+    "rawOfficialSite": "蓝桥杯大赛官网",
+    "rawEvidence": "第17届个人赛通知",
+    "rawNotes": "2026最新。第17届蓝桥杯网络安全分支，现场实机夺旗对决。"
+  },
+  {
+    "number": 114,
+    "name": "四川省大学生企业管理挑战赛",
+    "rawRegistrationTime": "2025.10.11 – 10.19",
+    "rawContestTime": "2025.10校/11.15省决赛",
+    "rawOfficialSite": "iBizSim企模模拟",
+    "rawEvidence": "西财大教务网通知",
+    "rawNotes": "2025数据。西财与西华师大联合执办，含运营与战术决策。"
+  },
+  {
+    "number": 115,
+    "name": "四川省数智化企业沙盘模拟经营赛",
+    "rawRegistrationTime": "2025.05 – 06月",
+    "rawContestTime": "2025.07.04 – 07.05决赛",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西华大学新道承办通知",
+    "rawNotes": "2025数据。省厅主办、西华大学承办，利用数智沙盘系统。"
+  },
+  {
+    "number": 116,
+    "name": "四川省商科实务技能大赛(多方向)",
+    "rawRegistrationTime": "2026.05 – 06.30滚动",
+    "rawContestTime": "2026.06中下旬复/08决赛",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西财大财会网栏入口",
+    "rawNotes": "2026最新。含营销、财税、金融多赛道，目前系统“进行中”。"
+  },
+  {
+    "number": 117,
+    "name": "四川省大学生公共管理案例挑战赛",
+    "rawRegistrationTime": "2025.07 – 07.27",
+    "rawContestTime": "2025.08-10初复/11省决",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西财大公管院公示",
+    "rawNotes": "2025数据。第7届西南财大承办。注：文件与123条登记重复。"
+  },
+  {
+    "number": 118,
+    "name": "四川省大学生BIM毕业设计创新赛",
+    "rawRegistrationTime": "2025.09 – 10月",
+    "rawContestTime": "2025.11 – 2026.05完赛",
+    "rawOfficialSite": "广联达BIM毕业设计",
+    "rawEvidence": "成都工业学院喜报栏",
+    "rawNotes": "2026完赛。跨年赛制，成都工业学院与西南交通大学承办。"
+  },
+  {
+    "number": 119,
+    "name": "四川省大学生信息素养大赛",
+    "rawRegistrationTime": "2026.06.04 – 06.30",
+    "rawContestTime": "2026.09校赛/10-11省赛",
+    "rawOfficialSite": "“AI+信息素养”平台",
+    "rawEvidence": "四川文理官方发文通知",
+    "rawNotes": "2026最新。全面升级为“AI+信息素养”，两地图工委联办。"
+  },
+  {
+    "number": 120,
+    "name": "四川省外语能力“理解当代中国”赛",
+    "rawRegistrationTime": "2026.05.08 – 08.07",
+    "rawContestTime": "2026.09-11省/10-12国赛",
+    "rawOfficialSite": "理解当代中国网",
+    "rawEvidence": "外研社2026全新章程",
+    "rawNotes": "2026最新。含演讲、口译、短视频等多赛道，校赛火热网推。"
+  },
+  {
+    "number": 121,
+    "name": "四川省大学生广告艺术大赛",
+    "rawRegistrationTime": "2026.05.10 – 06.12",
+    "rawContestTime": "2026.06中下旬省/07.05国",
+    "rawOfficialSite": "大广赛官网",
+    "rawEvidence": "第18届大广赛指南细则",
+    "rawNotes": "2026最新。线上提报已于6月中旬截标，进入各分赛区网评。"
+  },
+  {
+    "number": 122,
+    "name": "四川省大学生非遗影像创新大赛",
+    "rawRegistrationTime": "2025.06 – 09月",
+    "rawContestTime": "2025.10 – 11月评审",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "省教厅高教处通知公告",
+    "rawNotes": "2025数据。主征高校师生非遗非遗故事及活态影像。下半年启。"
+  },
+  {
+    "number": 123,
+    "name": "四川省大学生公共管理案例挑战赛",
+    "rawRegistrationTime": "2025.07 – 07.27",
+    "rawContestTime": "2025.08-10初复/11省决",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西财大公管院公示",
+    "rawNotes": "2025数据。注：附件表格原文件此项与序号 117 登记重复。"
+  },
+  {
+    "number": 124,
+    "name": "四川省大学生民族工艺美术设计赛",
+    "rawRegistrationTime": "2026.06.10 – 09.30",
+    "rawContestTime": "2026.06.10 – 09.30投递",
+    "rawOfficialSite": "摩课书院竞赛平台",
+    "rawEvidence": "美术赛申报指南入口",
+    "rawNotes": "2026最新。省厅主办工艺美术与非遗传承设计，系统火热报名中。"
+  },
+  {
+    "number": 125,
+    "name": "四川省大学生农业创意设计大赛",
+    "rawRegistrationTime": "2025.09.23 – 10.30",
+    "rawContestTime": "2025.11月名单公示期",
+    "rawOfficialSite": "全国农业创意设计赛",
+    "rawEvidence": "2025省赛方案与指南",
+    "rawNotes": "2025数据。常设特色“三农+文创”赛，2026新方案多在9月发。"
+  },
+  {
+    "number": 126,
+    "name": "四川省大学生社工项目创新设计赛",
+    "rawRegistrationTime": "2025.09 – 10月",
+    "rawContestTime": "2025.11.10全省决赛",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "川农大法学通告喜报",
+    "rawNotes": "2025数据。首届由川北医学院承办并完赛。新届章程待下达。"
+  },
+  {
+    "number": 127,
+    "name": "四川省大学生乡村振兴创意设计赛",
+    "rawRegistrationTime": "2026.06.06 – 09.10",
+    "rawContestTime": "2026.06.06 – 11.20评审",
+    "rawOfficialSite": "摩课书院竞赛平台",
+    "rawEvidence": "乡村赛官方大本营入口",
+    "rawNotes": "2026最新。绵阳师范学院等承办，主题为“和美乡村创意青春”。"
+  },
+  {
+    "number": 128,
+    "name": "四川省大学生原创微电影大赛",
+    "rawRegistrationTime": "2025.04 – 09.10",
+    "rawContestTime": "2025.10 – 11月收片结赛",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "西南民大文学艺术公告",
+    "rawNotes": "2025数据。省属原创微视频及跨文化数字纪实，秋初截止收片。"
+  },
+  {
+    "number": 129,
+    "name": "四川省中华经典诵写讲演系列活动",
+    "rawRegistrationTime": "2026.05 – 06.09校赛",
+    "rawContestTime": "2026.07前测/07-08省评",
+    "rawOfficialSite": "中华经典诵写讲网",
+    "rawEvidence": "大赛官网通知文件",
+    "rawNotes": "2026最新。对接国赛第8届经典诵写讲，含讲解/篆刻等多道。"
+  },
+  {
+    "number": 130,
+    "name": "四川省大学生数字艺术设计大赛",
+    "rawRegistrationTime": "2026.03 – 06.20",
+    "rawContestTime": "2026.06.25 – 08.08省评",
+    "rawOfficialSite": "未来设计师官网",
+    "rawEvidence": "未来设计师分赛区指南",
+    "rawNotes": "2026最新。属于第14届未来设计师（NCDA）四川省分赛区选拔。"
+  },
+  {
+    "number": 131,
+    "name": "四川省大学生材料设计大赛",
+    "rawRegistrationTime": "2025.09 – 09月下旬",
+    "rawContestTime": "2025.10.18决赛答辩",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "钒钛学院省赛通知栏",
+    "rawNotes": "2025数据。第五届由西南石油大学全面承办，新批文待金秋。"
+  },
+  {
+    "number": 132,
+    "name": "四川省大学生传感器创新创业大赛",
+    "rawRegistrationTime": "2025.04 – 06月",
+    "rawContestTime": "2025.07月（省赛区专家评）",
+    "rawOfficialSite": "四川省高校学科竞赛网",
+    "rawEvidence": "教育厅通知公告栏入口",
+    "rawNotes": "2025数据。多与中国传感器创新创业大赛四川省赛区并轨接收。"
+  },
+  {
+    "number": 133,
+    "name": "四川省大学生光电设计竞赛",
+    "rawRegistrationTime": "2026.03 – 04.19",
+    "rawContestTime": "2026.05.29 – 31现场赛",
+    "rawOfficialSite": "中国光学学会",
+    "rawEvidence": "光电赛大纲与指南入口",
+    "rawNotes": "2026最新。第14届全国光电赛四川（西南区）选拔，5底已完赛。"
+  },
+  {
+    "number": 134,
+    "name": "四川省大学生物理实验创新大赛",
+    "rawRegistrationTime": "2026.03 – 04月",
+    "rawContestTime": "2026.03 – 07月（西南赛区）",
+    "rawOfficialSite": "成都理工教务处",
+    "rawEvidence": "西南地区物理实验创新通知",
+    "rawNotes": "2026最新。本项挂靠“第三届西南地区大学生物理实验竞赛”。"
+  }
+]

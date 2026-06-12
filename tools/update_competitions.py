@@ -11,6 +11,9 @@ def main() -> None:
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
 
     # This placeholder keeps the scheduled update workflow non-destructive.
+    # Use registration*/contest* for the current year's official dates.
+    # Use referenceRegistration*/referenceContest* for 2025 dates when the
+    # current year's notice has not been published yet.
     # Add official-site scrapers here as each competition's source URL is filled.
     # For now, do not change the file merely to update a timestamp.
     data.setdefault("updatedAt", "")

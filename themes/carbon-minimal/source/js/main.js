@@ -110,7 +110,9 @@ if (schedulePage) {
   const grid = schedulePage.querySelector('[data-schedule-grid]');
   const pendingList = schedulePage.querySelector('[data-schedule-pending]');
   const countNode = schedulePage.querySelector('[data-schedule-count]');
-  const updatedNode = schedulePage.querySelector('[data-schedule-updated]');
+  const currentCountNode = schedulePage.querySelector('[data-schedule-current-count]');
+  const referenceCountNode = schedulePage.querySelector('[data-schedule-reference-count]');
+  const pendingCountNode = schedulePage.querySelector('[data-schedule-pending-count]');
   const monthTitle = schedulePage.querySelector('[data-schedule-month-title]');
   const searchInput = schedulePage.querySelector('[data-schedule-search]');
   const levelSelect = schedulePage.querySelector('[data-schedule-level]');
@@ -122,11 +124,51 @@ if (schedulePage) {
   const dialogChips = schedulePage.querySelector('[data-dialog-chips]');
   const dialogDetails = schedulePage.querySelector('[data-dialog-details]');
   const officialLink = schedulePage.querySelector('[data-dialog-official]');
+  const evidenceLink = schedulePage.querySelector('[data-dialog-evidence]');
+  const deletePersonalButton = schedulePage.querySelector('[data-personal-delete]');
+  const personalForm = schedulePage.querySelector('[data-personal-form]');
+  const personalList = schedulePage.querySelector('[data-personal-list]');
 
   let competitions = [];
+  let personalItems = [];
+  let activePersonalId = '';
   const today = new Date();
+  const currentYear = today.getFullYear();
+  let referenceYear = 2025;
   let visibleYear = today.getFullYear();
   let visibleMonth = today.getMonth();
+  const personalStorageKey = 'alano-schedule-personal-events';
+
+  const dateFields = [
+    {
+      label: '报名开始',
+      current: 'registrationStart',
+      reference: 'referenceRegistrationStart'
+    },
+    {
+      label: '报名截止',
+      current: 'registrationEnd',
+      reference: 'referenceRegistrationEnd'
+    },
+    {
+      label: '正式比赛',
+      current: 'contestStart',
+      reference: 'referenceContestStart'
+    },
+    {
+      label: '比赛结束',
+      current: 'contestEnd',
+      reference: 'referenceContestEnd'
+    }
+  ];
+
+  const escapeHtml = (value = '') => String(value).replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  })[char]);
 
   const recognitionClass = (recognition = '') => {
     if (recognition.includes('A')) return 'rec-a';
@@ -148,54 +190,216 @@ if (schedulePage) {
     String(date.getDate()).padStart(2, '0')
   ].join('-');
 
-  const formatDate = (value) => value || '待官网确认';
+  const loadPersonalItems = () => {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(personalStorageKey) || '[]');
+      return Array.isArray(parsed) ? parsed.filter((item) => item.title && parseDate(item.date)) : [];
+    } catch (error) {
+      return [];
+    }
+  };
 
-  const eventNodes = (competition) => {
+  const savePersonalItems = () => {
+    localStorage.setItem(personalStorageKey, JSON.stringify(personalItems));
+  };
+
+  const validDateValue = (value) => (parseDate(value) ? value : '');
+
+  const referenceValue = (competition, key) => {
+    if (validDateValue(competition[key])) return competition[key];
+    const nestedKey = key.replace(/^reference/, '');
+    const normalized = nestedKey.charAt(0).toLowerCase() + nestedKey.slice(1);
+    return validDateValue(competition.referenceDates?.[normalized]);
+  };
+
+  const dateInfo = (competition, currentKey, referenceKey) => {
+    const current = validDateValue(competition[currentKey]);
+    if (current) return { value: current, source: 'current' };
+
+    const reference = referenceValue(competition, referenceKey);
+    if (reference) return { value: reference, source: 'reference' };
+
+    return { value: '', source: 'pending' };
+  };
+
+  const formatDateInfo = (info) => {
+    if (info.source === 'current') return escapeHtml(info.value);
+    if (info.source === 'reference') {
+      return `${escapeHtml(info.value)}<span class="date-note">${referenceYear}年时间，今年暂未通知</span>`;
+    }
+    return '待官网确认';
+  };
+
+  const formatContestRange = (competition) => {
+    const currentStart = validDateValue(competition.contestStart);
+    if (currentStart) {
+      const currentEnd = validDateValue(competition.contestEnd);
+      const range = currentEnd && currentEnd !== currentStart ? `${currentStart} 至 ${currentEnd}` : currentStart;
+      return escapeHtml(range);
+    }
+
+    const currentEnd = validDateValue(competition.contestEnd);
+    if (currentEnd) return `${escapeHtml(currentEnd)}<span class="date-note">结束时间</span>`;
+
+    const referenceStart = referenceValue(competition, 'referenceContestStart');
+    if (referenceStart) {
+      const referenceEnd = referenceValue(competition, 'referenceContestEnd');
+      const range = referenceEnd && referenceEnd !== referenceStart ? `${referenceStart} 至 ${referenceEnd}` : referenceStart;
+      return `${escapeHtml(range)}<span class="date-note">${referenceYear}年时间，今年暂未通知</span>`;
+    }
+
+    const referenceEnd = referenceValue(competition, 'referenceContestEnd');
+    if (referenceEnd) {
+      return `${escapeHtml(referenceEnd)}<span class="date-note">${referenceYear}年结束时间，今年暂未通知</span>`;
+    }
+
+    return '待官网确认';
+  };
+
+  const dateState = (competition) => {
+    const infos = dateFields.map((field) => dateInfo(competition, field.current, field.reference));
+    if (infos.some((info) => info.source === 'current')) {
+      return {
+        key: 'current',
+        label: `${currentYear}年已确认`,
+        dialogLabel: '已收录今年日程',
+        listLabel: '今年时间已收录'
+      };
+    }
+    if (infos.some((info) => info.source === 'reference')) {
+      return {
+        key: 'reference',
+        label: `${referenceYear}参考`,
+        dialogLabel: `使用${referenceYear}年参考时间`,
+        listLabel: `${referenceYear}年时间参考，今年暂未通知`
+      };
+    }
+    return {
+      key: 'pending',
+      label: '待官网确认',
+      dialogLabel: '待官网确认',
+      listLabel: '时间待官网确认'
+    };
+  };
+
+  const calendarDate = (info, calendarYear) => {
+    const date = parseDate(info.value);
+    if (!date) return null;
+    if (info.source === 'reference') return new Date(calendarYear, date.getMonth(), date.getDate());
+    return date;
+  };
+
+  const competitionEventNodes = (competition, calendarYear) => {
     const nodes = [];
-    [
-      ['报名开始', competition.registrationStart],
-      ['报名截止', competition.registrationEnd],
-      ['正式比赛', competition.contestStart]
-    ].forEach(([label, value]) => {
-      const date = parseDate(value);
-      if (date) nodes.push({ label, date, competition });
+    dateFields.forEach((field) => {
+      const info = dateInfo(competition, field.current, field.reference);
+      const date = calendarDate(info, calendarYear);
+      if (date) nodes.push({ label: field.label, date, competition, source: info.source, originalDate: info.value });
     });
     return nodes;
   };
 
-  const allEvents = () => competitions.flatMap(eventNodes);
+  const personalEventNodes = () => personalItems
+    .map((item) => {
+      const date = parseDate(item.date);
+      return date ? { label: item.type || '事务', date, personal: item, source: 'personal' } : null;
+    })
+    .filter(Boolean);
 
-  const openDialog = (competition) => {
-    dialogTitle.textContent = competition.name;
-    dialogStatus.textContent = competition.status === 'pending-official-date' ? '待官网确认' : '已收录日程';
-    dialogChips.innerHTML = '';
-    [competition.level, competition.recognition, competition.status === 'pending-official-date' ? '待官网通知' : '已确认'].forEach((chip) => {
-      const span = document.createElement('span');
-      span.className = `schedule-chip ${recognitionClass(competition.recognition)}`;
-      span.textContent = chip || '待核对';
-      dialogChips.appendChild(span);
-    });
+  const allEvents = (calendarYear) => [
+    ...competitions.flatMap((competition) => competitionEventNodes(competition, calendarYear)),
+    ...personalEventNodes()
+  ];
 
-    const rows = [
-      ['序号', competition.number],
-      ['主办单位', competition.organizer || '待核对'],
-      ['2025年认定类别', competition.recognition || '待核对'],
-      ['竞赛级别', competition.level || '待核对'],
-      ['报名开始', formatDate(competition.registrationStart)],
-      ['报名截止', formatDate(competition.registrationEnd)],
-      ['正式比赛', formatDate(competition.contestStart)],
-      ['数据说明', competition.notes || '以官网通知为准']
-    ];
+  const renderScheduleStats = () => {
+    const states = competitions.map((competition) => dateState(competition).key);
+    countNode.textContent = competitions.length;
+    currentCountNode.textContent = states.filter((state) => state === 'current').length;
+    referenceCountNode.textContent = states.filter((state) => state === 'reference').length;
+    pendingCountNode.textContent = states.filter((state) => state === 'pending').length;
+  };
 
-    dialogDetails.innerHTML = rows.map(([term, detail]) => `<dt>${term}</dt><dd>${detail}</dd>`).join('');
-
-    if (competition.officialUrl) {
+  const syncDialogLinks = ({ officialUrl = '', evidenceUrl = '' } = {}) => {
+    if (officialUrl) {
       officialLink.hidden = false;
-      officialLink.href = competition.officialUrl;
+      officialLink.href = officialUrl;
+      officialLink.textContent = '前往官网';
     } else {
       officialLink.hidden = true;
       officialLink.removeAttribute('href');
     }
+
+    if (evidenceUrl) {
+      evidenceLink.hidden = false;
+      evidenceLink.href = evidenceUrl;
+    } else {
+      evidenceLink.hidden = true;
+      evidenceLink.removeAttribute('href');
+    }
+  };
+
+  const openDialog = (competition) => {
+    const state = dateState(competition);
+    activePersonalId = '';
+    deletePersonalButton.hidden = true;
+    dialogTitle.textContent = competition.name;
+    dialogStatus.textContent = state.dialogLabel;
+    dialogChips.innerHTML = '';
+    [
+      { text: competition.level || '待核对', className: 'tone-muted' },
+      { text: competition.recognition || '待核对', className: recognitionClass(competition.recognition) },
+      { text: state.label, className: `tone-${state.key}` }
+    ].forEach((chip) => {
+      const span = document.createElement('span');
+      span.className = `schedule-chip ${chip.className}`;
+      span.textContent = chip.text;
+      dialogChips.appendChild(span);
+    });
+
+    const officialUrl = competition.officialUrl || '';
+    const evidenceUrl = competition.evidenceUrl || competition.dateEvidenceUrl || '';
+    const rows = [
+      ['主办单位', escapeHtml(competition.organizer || '待核对')],
+      ['2025年认定类别', escapeHtml(competition.recognition || '待核对')],
+      ['竞赛级别', escapeHtml(competition.level || '待核对')],
+      ['竞赛官网', officialUrl ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(officialUrl)}</a>` : '待补充'],
+      ['报名开始', formatDateInfo(dateInfo(competition, 'registrationStart', 'referenceRegistrationStart'))],
+      ['报名截止', formatDateInfo(dateInfo(competition, 'registrationEnd', 'referenceRegistrationEnd'))],
+      ['正式比赛', formatContestRange(competition)]
+    ];
+
+    if (evidenceUrl && evidenceUrl !== officialUrl) {
+      rows.splice(4, 0, ['官方通知', `<a href="${escapeHtml(evidenceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(evidenceUrl)}</a>`]);
+    }
+
+    dialogDetails.innerHTML = rows.map(([term, detail]) => `<dt>${escapeHtml(term)}</dt><dd>${detail}</dd>`).join('');
+    syncDialogLinks({ officialUrl, evidenceUrl });
+
+    dialog.hidden = false;
+    document.body.classList.add('dialog-open');
+    dialog.querySelector('.dialog-close')?.focus();
+  };
+
+  const openPersonalDialog = (item) => {
+    activePersonalId = item.id;
+    dialogTitle.textContent = item.title;
+    dialogStatus.textContent = '我的事务';
+    dialogChips.innerHTML = '';
+
+    const chip = document.createElement('span');
+    chip.className = 'schedule-chip tone-personal';
+    chip.textContent = item.type || '提醒';
+    dialogChips.appendChild(chip);
+
+    const rows = [
+      ['日期', escapeHtml(item.date)],
+      ['类型', escapeHtml(item.type || '提醒')],
+      ['备注', escapeHtml(item.note || '无')]
+    ];
+
+    dialogDetails.innerHTML = rows.map(([term, detail]) => `<dt>${escapeHtml(term)}</dt><dd>${detail}</dd>`).join('');
+    syncDialogLinks();
+    deletePersonalButton.hidden = false;
 
     dialog.hidden = false;
     document.body.classList.add('dialog-open');
@@ -212,7 +416,7 @@ if (schedulePage) {
     const start = new Date(firstDay);
     const mondayOffset = (firstDay.getDay() + 6) % 7;
     start.setDate(firstDay.getDate() - mondayOffset);
-    const monthEvents = allEvents().reduce((map, item) => {
+    const monthEvents = allEvents(visibleYear).reduce((map, item) => {
       const key = dateKey(item.date);
       if (!map.has(key)) map.set(key, []);
       map.get(key).push(item);
@@ -236,16 +440,32 @@ if (schedulePage) {
       day.textContent = date.getDate();
       cell.appendChild(day);
 
-      (monthEvents.get(key) || []).slice(0, 3).forEach((event) => {
+      const dayEvents = (monthEvents.get(key) || []).sort((a, b) => {
+        if (a.source === b.source) return a.label.localeCompare(b.label, 'zh-Hans-CN');
+        if (a.source === 'personal') return -1;
+        if (b.source === 'personal') return 1;
+        return 0;
+      });
+
+      dayEvents.slice(0, 3).forEach((event) => {
         const button = document.createElement('button');
         button.type = 'button';
-        button.className = `calendar-event ${recognitionClass(event.competition.recognition)}`;
-        button.textContent = `${event.label} · ${event.competition.name}`;
-        button.addEventListener('click', () => openDialog(event.competition));
+        if (event.source === 'personal') {
+          button.className = 'calendar-event personal-event';
+          button.textContent = `${event.label} · ${event.personal.title}`;
+          button.addEventListener('click', () => openPersonalDialog(event.personal));
+        } else {
+          button.className = `calendar-event ${recognitionClass(event.competition.recognition)}${event.source === 'reference' ? ' is-reference' : ''}`;
+          button.textContent = `${event.source === 'reference' ? `${referenceYear}参考 · ` : ''}${event.label} · ${event.competition.name}`;
+          if (event.source === 'reference') {
+            button.title = `${event.originalDate} 是${referenceYear}年具体时间，今年还未通知`;
+          }
+          button.addEventListener('click', () => openDialog(event.competition));
+        }
         cell.appendChild(button);
       });
 
-      const extra = (monthEvents.get(key) || []).length - 3;
+      const extra = dayEvents.length - 3;
       if (extra > 0) {
         const more = document.createElement('span');
         more.className = 'calendar-more';
@@ -267,13 +487,15 @@ if (schedulePage) {
 
     pendingList.innerHTML = '';
     filtered.forEach((item) => {
+      const state = dateState(item);
       const button = document.createElement('button');
       button.type = 'button';
-      button.className = 'pending-item';
+      button.className = `pending-item is-${state.key}`;
       button.innerHTML = `
-        <span class="schedule-chip ${recognitionClass(item.recognition)}">${item.recognition || '待核对'}</span>
-        <strong>${item.name}</strong>
-        <small>${item.level || '待核对'} / ${item.organizer || '主办单位待核对'}</small>
+        <span class="schedule-chip ${recognitionClass(item.recognition)}">${escapeHtml(item.recognition || '待核对')}</span>
+        <strong>${escapeHtml(item.name)}</strong>
+        <small>${escapeHtml(item.level || '待核对')} / ${escapeHtml(item.organizer || '主办单位待核对')}</small>
+        <small class="pending-date-state">${escapeHtml(state.listLabel)}</small>
       `;
       button.addEventListener('click', () => openDialog(item));
       pendingList.appendChild(button);
@@ -287,14 +509,44 @@ if (schedulePage) {
     }
   };
 
+  const renderPersonalList = () => {
+    if (!personalList) return;
+    personalList.innerHTML = '';
+
+    if (personalItems.length === 0) {
+      const hint = document.createElement('p');
+      hint.className = 'pending-hint';
+      hint.textContent = '还没有添加事务。';
+      personalList.appendChild(hint);
+      return;
+    }
+
+    [...personalItems]
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .forEach((item) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'personal-item';
+        button.innerHTML = `
+          <strong>${escapeHtml(item.title)}</strong>
+          <small>${escapeHtml(item.date)} / ${escapeHtml(item.type || '提醒')}</small>
+        `;
+        button.addEventListener('click', () => openPersonalDialog(item));
+        personalList.appendChild(button);
+      });
+  };
+
   fetch(dataUrl)
     .then((response) => response.json())
     .then((data) => {
+      referenceYear = Number(data.referenceYear || data.year || referenceYear);
       competitions = data.competitions || [];
-      countNode.textContent = competitions.length;
-      updatedNode.textContent = data.updatedAt ? `更新于 ${data.updatedAt}` : data.notice || '等待官网时间';
+      personalItems = loadPersonalItems();
+      if (personalForm?.elements.date) personalForm.elements.date.value = dateKey(today);
+      renderScheduleStats();
       renderCalendar();
       renderPending();
+      renderPersonalList();
     })
     .catch(() => {
       pendingList.innerHTML = '<p class="pending-hint">日程数据加载失败，请稍后重试。</p>';
@@ -320,6 +572,34 @@ if (schedulePage) {
 
   searchInput.addEventListener('input', renderPending);
   levelSelect.addEventListener('change', renderPending);
+  personalForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(personalForm);
+    const title = String(formData.get('title') || '').trim();
+    const date = String(formData.get('date') || '').trim();
+    if (!title || !parseDate(date)) return;
+    personalItems.push({
+      id: `task-${Date.now()}`,
+      title,
+      date,
+      type: String(formData.get('type') || '提醒'),
+      note: String(formData.get('note') || '').trim()
+    });
+    savePersonalItems();
+    personalForm.reset();
+    personalForm.elements.date.value = date;
+    renderCalendar();
+    renderPersonalList();
+  });
+  deletePersonalButton?.addEventListener('click', () => {
+    if (!activePersonalId) return;
+    personalItems = personalItems.filter((item) => item.id !== activePersonalId);
+    activePersonalId = '';
+    savePersonalItems();
+    closeDialog();
+    renderCalendar();
+    renderPersonalList();
+  });
   schedulePage.querySelectorAll('[data-schedule-close]').forEach((control) => {
     control.addEventListener('click', closeDialog);
   });

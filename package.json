@@ -9,7 +9,7 @@
   "scripts": {
     "hexo": "node ./node_modules/hexo-cli/bin/hexo",
     "clean": "npm run hexo -- clean",
-    "build": "npm run hexo -- generate",
+    "build": "npm run hexo -- clean && npm run hexo -- generate",
     "server": "npm run hexo -- server --draft --port 4000",
     "deploy": "npm run hexo -- clean && npm run hexo -- deploy"
   },

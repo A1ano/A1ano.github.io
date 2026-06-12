@@ -831,6 +831,10 @@ pre {
   color: var(--muted);
 }
 
+.schedule-note {
+  line-height: 1.8;
+}
+
 .schedule-stats {
   display: flex;
   flex-wrap: wrap;
@@ -991,6 +995,25 @@ pre {
   white-space: nowrap;
 }
 
+.calendar-event.is-reference {
+  border: 1px dashed rgba(248, 214, 109, 0.66);
+  background: linear-gradient(135deg, rgba(248, 214, 109, 0.18), rgba(88, 166, 255, 0.1));
+  color: #f8d66d;
+  box-shadow: inset 3px 0 0 rgba(248, 214, 109, 0.58);
+}
+
+.calendar-event.is-reference:hover {
+  border-color: rgba(248, 214, 109, 0.92);
+  background: linear-gradient(135deg, rgba(248, 214, 109, 0.24), rgba(63, 185, 80, 0.13));
+}
+
+.calendar-event.personal-event {
+  border: 1px solid rgba(210, 168, 255, 0.58);
+  background: linear-gradient(135deg, rgba(210, 168, 255, 0.18), rgba(88, 166, 255, 0.14));
+  color: #d2a8ff;
+  box-shadow: inset 3px 0 0 rgba(210, 168, 255, 0.58);
+}
+
 .calendar-more {
   display: block;
   margin-top: 7px;
@@ -1018,6 +1041,8 @@ pre {
 .schedule-side {
   position: sticky;
   top: 92px;
+  display: grid;
+  gap: 16px;
 }
 
 .schedule-panel {
@@ -1040,7 +1065,10 @@ pre {
 }
 
 .schedule-filters input,
-.schedule-filters select {
+.schedule-filters select,
+.personal-form input,
+.personal-form select,
+.personal-form textarea {
   min-height: 38px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1050,7 +1078,35 @@ pre {
   font: inherit;
 }
 
-.pending-list {
+.personal-form {
+  display: grid;
+  gap: 10px;
+}
+
+.personal-form-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 88px;
+  gap: 10px;
+}
+
+.personal-form textarea {
+  min-height: 74px;
+  resize: vertical;
+}
+
+.personal-form button {
+  min-height: 40px;
+  border: 1px solid rgba(88, 166, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(88, 166, 255, 0.12);
+  color: var(--blue);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.pending-list,
+.personal-list {
   display: grid;
   gap: 10px;
   max-height: 680px;
@@ -1058,7 +1114,13 @@ pre {
   padding-right: 4px;
 }
 
-.pending-item {
+.personal-list {
+  max-height: 280px;
+  margin-top: 14px;
+}
+
+.pending-item,
+.personal-item {
   display: grid;
   gap: 5px;
   width: 100%;
@@ -1071,22 +1133,37 @@ pre {
   text-align: left;
 }
 
-.pending-item:hover {
+.pending-item:hover,
+.personal-item:hover {
   border-color: rgba(88, 166, 255, 0.45);
   background: rgba(88, 166, 255, 0.08);
 }
 
-.pending-item strong {
+.pending-item.is-reference {
+  border-color: rgba(248, 214, 109, 0.24);
+}
+
+.pending-item.is-current {
+  border-color: rgba(63, 185, 80, 0.24);
+}
+
+.pending-item strong,
+.personal-item strong {
   color: var(--heading);
   font-size: 14px;
   line-height: 1.35;
 }
 
 .pending-item small,
+.personal-item small,
 .pending-hint {
   color: var(--muted);
   font-size: 12px;
   line-height: 1.5;
+}
+
+.pending-date-state {
+  color: #d8b95d;
 }
 
 .schedule-chip {
@@ -1096,9 +1173,40 @@ pre {
   min-height: 22px;
   border-radius: 999px;
   padding: 2px 8px;
+  border: 1px solid transparent;
   font-family: var(--font-ui);
   font-size: 12px;
   font-weight: 800;
+}
+
+.schedule-chip.tone-muted {
+  border-color: rgba(139, 148, 158, 0.22);
+  background: rgba(139, 148, 158, 0.12);
+  color: var(--muted);
+}
+
+.schedule-chip.tone-current {
+  border-color: rgba(63, 185, 80, 0.32);
+  background: rgba(63, 185, 80, 0.13);
+  color: #7ee787;
+}
+
+.schedule-chip.tone-reference {
+  border-color: rgba(248, 214, 109, 0.34);
+  background: rgba(248, 214, 109, 0.14);
+  color: #f8d66d;
+}
+
+.schedule-chip.tone-pending {
+  border-color: rgba(139, 148, 158, 0.24);
+  background: rgba(13, 17, 23, 0.72);
+  color: var(--muted);
+}
+
+.schedule-chip.tone-personal {
+  border-color: rgba(210, 168, 255, 0.34);
+  background: rgba(210, 168, 255, 0.14);
+  color: #d2a8ff;
 }
 
 .schedule-dialog[hidden] {
@@ -1182,6 +1290,14 @@ pre {
   color: var(--text);
 }
 
+.date-note {
+  display: block;
+  margin-top: 4px;
+  color: #d8b95d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .dialog-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1208,6 +1324,12 @@ pre {
   border-color: var(--line);
   background: rgba(13, 17, 23, 0.64);
   color: var(--muted);
+}
+
+.dialog-actions .danger-action {
+  border-color: rgba(248, 81, 73, 0.4);
+  background: rgba(248, 81, 73, 0.1);
+  color: #ff7b72;
 }
 
 .section-header {

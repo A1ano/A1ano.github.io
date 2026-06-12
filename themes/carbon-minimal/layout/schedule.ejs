@@ -1,11 +1,13 @@
 <section class="schedule-page" data-schedule-page data-source="<%- url_for('/data/competitions.json') %>">
   <header class="schedule-hero">
     <p class="eyebrow">Calendar</p>
-    <h1>竞赛日程</h1>
-    <p>报名、截止与正式比赛时间以各赛事官网通知为准。</p>
+    <h1>日程</h1>
+    <p class="schedule-note">报名、截止与正式比赛时间以各赛事官网通知为准；若今年尚未公布，日历会用 2025 年具体时间作参考标记。</p>
     <div class="schedule-stats">
       <span><strong data-schedule-count>--</strong> 项竞赛</span>
-      <span data-schedule-updated>等待数据</span>
+      <span><strong data-schedule-current-count>--</strong> 项今年已确认</span>
+      <span><strong data-schedule-reference-count>--</strong> 项 2025 参考</span>
+      <span><strong data-schedule-pending-count>--</strong> 项待确认</span>
     </div>
   </header>
 
@@ -35,7 +37,7 @@
 
     <aside class="schedule-side">
       <section class="schedule-panel">
-        <h2>待官网确认</h2>
+        <h2>赛事索引</h2>
         <div class="schedule-filters">
           <input type="search" data-schedule-search placeholder="搜索竞赛">
           <select data-schedule-level aria-label="筛选认定类别">
@@ -47,6 +49,25 @@
           </select>
         </div>
         <div class="pending-list" data-schedule-pending></div>
+      </section>
+
+      <section class="schedule-panel personal-panel">
+        <h2>我的事务</h2>
+        <form class="personal-form" data-personal-form>
+          <input type="text" name="title" placeholder="事务名称" maxlength="60" required>
+          <div class="personal-form-row">
+            <input type="date" name="date" required>
+            <select name="type" aria-label="事务类型">
+              <option value="提醒">提醒</option>
+              <option value="学习">学习</option>
+              <option value="DDL">DDL</option>
+              <option value="生活">生活</option>
+            </select>
+          </div>
+          <textarea name="note" rows="3" placeholder="备注，可留空" maxlength="220"></textarea>
+          <button type="submit">添加事务</button>
+        </form>
+        <div class="personal-list" data-personal-list></div>
       </section>
     </aside>
   </div>
@@ -63,6 +84,8 @@
       <dl class="dialog-details" data-dialog-details></dl>
       <div class="dialog-actions">
         <a class="dialog-link" data-dialog-official target="_blank" rel="noopener noreferrer">前往官网</a>
+        <a class="dialog-link" data-dialog-evidence target="_blank" rel="noopener noreferrer">查看通知</a>
+        <button class="danger-action" type="button" data-personal-delete hidden>删除事务</button>
         <button type="button" data-schedule-close>留在当前页</button>
       </div>
     </section>
