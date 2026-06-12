@@ -5,6 +5,9 @@ nav:
   - name: 日志
     path: /logs/
     icon: logs
+  - name: 日程
+    path: /schedule/
+    icon: calendar
   - name: 友链
     path: /friends/
     icon: link

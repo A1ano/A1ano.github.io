@@ -39,6 +39,8 @@ npm run build
 
 `日志` 页面在 `source/logs/index.md`，适合放日常想法、片段记录和非技术随笔；它不会出现在首页技术文章列表里。
 
+`日程` 页面在 `source/schedule/index.md`，赛事数据在 `source/data/competitions.json`。当前数据来自学校 2025 年学科竞赛项目清单 PDF，包含全部 134 项竞赛的名称、主办单位、竞赛级别和 A/B1/B2/B3 认定类别。PDF 不包含报名开始、报名截止和正式比赛时间，因此这些时间字段需要后续根据赛事官网通知补充。
+
 如果使用用户或组织主页仓库，仓库名通常是 `yourname.github.io`，`url` 写 `https://yourname.github.io`。如果使用项目仓库，`url` 通常写 `https://yourname.github.io/repository-name`。
 
 ## 写文章
@@ -107,3 +109,17 @@ permissions:
 - `repo_id`
 - `category`
 - `category_id`
+
+## 竞赛日程
+
+日程页会读取 `source/data/competitions.json`：
+
+- `registrationStart`：报名开始时间。
+- `registrationEnd`：报名截止时间。
+- `contestStart`：正式比赛开始时间。
+- `contestEnd`：正式比赛结束时间。
+- `officialUrl`：赛事官网或通知页面。
+
+只要这些字段有日期，日程页就会自动把赛事放入对应月份的日历中。没有日期的赛事会显示在“待官网确认”列表里，点击赛事名称也能查看主办单位、竞赛级别和学校认定类别。
+
+`.github/workflows/update-competition-schedule.yml` 预留了每日定时更新流程。当前脚本不会臆造官网日期；当你为某些赛事补充 `officialUrl` 后，可以在 `tools/update_competitions.py` 里为对应官网添加解析逻辑，让 GitHub Actions 定时更新 JSON 并自动部署。

@@ -1,0 +1,30 @@
+name: Update competition schedule
+
+on:
+  schedule:
+    - cron: "10 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update competition data
+        run: python tools/update_competitions.py
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update competition schedule data"
+          file_pattern: source/data/competitions.json

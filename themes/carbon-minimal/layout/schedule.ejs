@@ -1,0 +1,70 @@
+<section class="schedule-page" data-schedule-page data-source="<%- url_for('/data/competitions.json') %>">
+  <header class="schedule-hero">
+    <p class="eyebrow">Calendar</p>
+    <h1>竞赛日程</h1>
+    <p>报名、截止与正式比赛时间以各赛事官网通知为准。</p>
+    <div class="schedule-stats">
+      <span><strong data-schedule-count>--</strong> 项竞赛</span>
+      <span data-schedule-updated>等待数据</span>
+    </div>
+  </header>
+
+  <div class="schedule-toolbar">
+    <button class="icon-button" type="button" data-schedule-prev aria-label="上一月">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <h2 data-schedule-month-title>Loading</h2>
+    <button class="icon-button" type="button" data-schedule-next aria-label="下一月">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <div class="schedule-layout">
+    <section class="calendar-card" aria-label="Competition calendar">
+      <div class="calendar-weekdays" aria-hidden="true">
+        <span>MON</span>
+        <span>TUE</span>
+        <span>WED</span>
+        <span>THU</span>
+        <span>FRI</span>
+        <span>SAT</span>
+        <span>SUN</span>
+      </div>
+      <div class="calendar-grid" data-schedule-grid></div>
+    </section>
+
+    <aside class="schedule-side">
+      <section class="schedule-panel">
+        <h2>待官网确认</h2>
+        <div class="schedule-filters">
+          <input type="search" data-schedule-search placeholder="搜索竞赛">
+          <select data-schedule-level aria-label="筛选认定类别">
+            <option value="">全部类别</option>
+            <option value="A">A</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="B3">B3</option>
+          </select>
+        </div>
+        <div class="pending-list" data-schedule-pending></div>
+      </section>
+    </aside>
+  </div>
+
+  <div class="schedule-dialog" data-schedule-dialog hidden>
+    <div class="schedule-dialog-backdrop" data-schedule-close></div>
+    <section class="schedule-dialog-card" role="dialog" aria-modal="true" aria-labelledby="schedule-dialog-title">
+      <button class="dialog-close" type="button" data-schedule-close aria-label="关闭">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <p class="eyebrow" data-dialog-status>Competition</p>
+      <h2 id="schedule-dialog-title" data-dialog-title></h2>
+      <div class="dialog-chips" data-dialog-chips></div>
+      <dl class="dialog-details" data-dialog-details></dl>
+      <div class="dialog-actions">
+        <a class="dialog-link" data-dialog-official target="_blank" rel="noopener noreferrer">前往官网</a>
+        <button type="button" data-schedule-close>留在当前页</button>
+      </div>
+    </section>
+  </div>
+</section>
