@@ -8,7 +8,23 @@
   </div>
 </section>
 
-<% var recentPosts = site.posts.sort('-date').toArray().slice(0, 6); %>
+<%
+function hasCategory(post, name) {
+  var found = false;
+  if (post.categories && post.categories.length) {
+    post.categories.each(function(category) {
+      if (category.name === name) found = true;
+    });
+  }
+  return found;
+}
+var homePosts = page.posts.toArray().filter(function(post) {
+  return !hasCategory(post, '学校课程');
+});
+var recentPosts = site.posts.sort('-date').toArray().filter(function(post) {
+  return !hasCategory(post, '学校课程');
+}).slice(0, 6);
+%>
 
 <section class="post-list-wrap" aria-label="Latest posts">
   <div class="section-title">
@@ -18,7 +34,7 @@
 
   <div class="home-content">
     <div class="post-list">
-    <% page.posts.each(function(post) { %>
+    <% homePosts.forEach(function(post) { %>
       <% var cover = post.cover || theme.default_cover || theme.hero || '/images/hero-cover.png'; %>
       <article class="post-item">
         <a class="post-cover" href="<%- url_for(post.path) %>" aria-label="<%= post.title %>">
